@@ -25,6 +25,7 @@ const config: Config = {
         'circular-medium': ['var(--font-circular-medium)'],
         'neue-montreal': ['var(--font-neue-montreal)'],
         'roslindale-display': ['var(--font-roslindale-display)'],
+        gtApina: ['var(--font-gtApina)'],
       },
       screens: {
         '2xl': { max: '1535px' },

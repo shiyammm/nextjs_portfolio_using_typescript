@@ -22,6 +22,10 @@ const roslindaleDisplay = localFont({
   src: '../public/assets/fonts/RoslindaleDisplayCondensed-Regular.ttf',
   variable: '--font-roslindale-display',
 });
+const gtAlpina = localFont({
+  src: '../public/assets/fonts/GT-Alpina-Regular-Italic.ttf',
+  variable: '--font-gtApina',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -36,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${acme.variable} ${circularBook.variable} ${circularMedium.variable} ${neueMontreal.variable} ${roslindaleDisplay.variable}`}
+        className={`${acme.variable} ${circularBook.variable} ${circularMedium.variable} ${neueMontreal.variable} ${roslindaleDisplay.variable} ${gtAlpina.variable} `}
       >
         {children}
       </body>

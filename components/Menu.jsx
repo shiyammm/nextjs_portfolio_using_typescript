@@ -9,12 +9,12 @@ const Menu = () => {
     setToggle(!toggle);
   };
   return (
-    <>
+    <div>
       <div
         onClick={handleMenu}
-        className="flex items-center gap-4 absolute z-40 right-12 bg-violet px-5 py-2 text-black font-semibold active:border-none  rounded-full text-2xl"
+        className=" relative flex items-center gap-4 z-[60] bg-violet px-5 py-2 text-black font-semibold active:border-none rounded-full text-2xl"
       >
-        <span className="mb-1.5">Menu</span>
+        <span className="mb-1">Menu</span>
         <svg width="40" height="40" viewBox="0 0 100 100">
           <path
             className={`line line1 ${toggle && 'opened-line1'}`}
@@ -31,13 +31,13 @@ const Menu = () => {
         </svg>
       </div>
       {toggle && (
-        <div className="absolute w-full h-screen left-0 top-0 flex items-center justify-center"  >
+        <div className="absolute w-full h-screen flex flex-col gap-[6rem] items-center justify-center z-[50] left-0 top-0">
           <ul className=" font-roslindale-display text-[11rem] text-white text-center leading-[15rem]">
             <li>Work</li>
             <li>Contact</li>
             <li>CV</li>
           </ul>
-          <div className="flex items-center justify-between w-full px-16 absolute bottom-8 text-white text-xl font-circular-medium ">
+          <div className="flex items-center justify-between w-full px-16  text-white text-xl font-circular-medium ">
             <a
               href=""
               className="group text-white transition-all duration-300 ease-in-out"
@@ -57,7 +57,7 @@ const Menu = () => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

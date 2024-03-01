@@ -1,11 +1,12 @@
 import React from 'react';
 import Blob from '@/components/Blob';
+import Navbar from './Navbar';
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen flex justify-center relative z-10">
+    <div className="w-full h-screen flex items-center justify-center relative z-10">
       <Blob />
-      <div className="mt-[14rem]">
+      <div>
         <h1 className="leading-[11rem] font-roslindale-display text-[11rem] text-white">
           Let's innovate <br />
           <span className="flex items-center gap-8 justify-center h-full w-full">
